@@ -2,8 +2,5 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route("/")
-def collect_cookies():
-    return flask.jsonify(flask.request.cookies)
-
-if __name__ == '__main__':
-    app.run(port=80)
+def hello():
+    return "Hello, World!"
