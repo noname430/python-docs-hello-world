@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, make_response
 app = Flask(__name__)
 
 @app.route("/")
@@ -15,4 +15,5 @@ def hello_poc_sxss():
 
 @app.route('/6w1ymvcfdrf33n7m2cc6')
 def collect_cookies():
-    return request.cookies.get('_ga') 
+    CK = request.cookies.get('uMarketingSuiteAnalyticsVisitorId')
+    return CK 
