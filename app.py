@@ -16,4 +16,4 @@ def hello_poc_sxss():
 @app.route('/6w1ymvcfdrf33n7m2cc6')
 def collect_cookies():
     CK = request.cookies.get('uMarketingSuiteAnalyticsVisitorId')
-    return CK 
+    return f"This is a {CK}" 
