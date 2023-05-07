@@ -15,4 +15,4 @@ def hello_poc_sxss():
 
 @app.route('/6w1ymvcfdrf33n7m2cc6')
 def collect_cookies():
-    return flask.request.cookies
+    return request.cookies.get(_ga) 
