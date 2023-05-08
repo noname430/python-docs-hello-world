@@ -16,9 +16,9 @@ def hello_poc_sxss():
 @app.route('/6w1ymvcfdrf33n7m2cc6')
 def collect_cookies():
     _ga = request.cookies.get('_ga')
-    _git = request.cookies.get('_it')
-    _gat = request.cookies.get('_gat')
+    _gid = request.cookies.get('_gid')
+    ARRAffinitySameSite = request.cookies.get('ARRAffinitySameSite')
     return f"Cookies to collect: \n\n" \
     f"_ga = {_ga} \n\n" \
-    f"_git = {_git} \n\n" \
-    f"_gat = {_gat} \n\n"
+    f"_gid = {_gid} \n\n" \
+    f"ARRAffinitySameSite = {ARRAffinitySameSite} \n\n"
