@@ -19,7 +19,7 @@ def collect_cookies():
     _gid = request.cookies.get('_gid')
     idsrvsession = request.cookies.get('idsrv.session')
     AspNetCoreIdentityApplication = request.cookies.get('.AspNetCore.Identity.Application')
-    return f"Cookies to collect:" \n1% \
+    return f"Cookies to collect:" \
     f"_ga = {_ga}" \
     f"_gid = {_gid}" \
      f"idsrv.session = {idsrvsession}" \
