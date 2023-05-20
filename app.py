@@ -38,7 +38,7 @@ def collect_cookies():
     f"_gid = {_gid} \n\n"
 
 @app.route("/cookie")
-def cookies():
+def set_cookies():
     resp = make_response("Set Cookies")
     cookies = request.cookies
     print(cookies)
@@ -52,4 +52,3 @@ def cookies():
     path='/',
     domain='.pggmenco.nl'
     )
-	
