@@ -50,7 +50,7 @@ def cookies():
     secure=True,
     httponly=True,
     path='/',
-    domain=.pggmenco.nl
+    domain='.pggmenco.nl'
     #samesite=None
     )
 
