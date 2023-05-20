@@ -46,10 +46,10 @@ def cookies():
     resp.set_cookie(
     ".AspNetCore.Identity.ApplicationC1",
     value="aaaa",
-    max_age=60
+    max_age=60,
     secure=True,
-    httponly=True
-    #path='/',
+    httponly=True,
+    path='/'
     #domain=.pggmenco.nl,
     #samesite=None
     )
