@@ -37,27 +37,27 @@ def collect_cookies():
     f"_ga = {_ga} \n\n" \
     f"_gid = {_gid} \n\n"
 
+#@app.route("/cookie")
+#def cookies():
+#    resp = make_response("Set Cookies")
+#    cookies = request.cookies
+#    print(cookies)
+#
+#    resp.set_cookie(
+#    ".AspNetCore.Identity.ApplicationC1",
+#    value="aaaa",
+#    max_age=60,
+#    secure=True,
+#    httponly=True,
+#    path='/',
+#    domain='.pggmenco.nl'
+#    #samesite=None
+#    )
+#
+#    return resp
+
 @app.route("/cookie")
-def cookies():
-    resp = make_response("Set Cookies")
-    cookies = request.cookies
-    print(cookies)
-
-    resp.set_cookie(
-    ".AspNetCore.Identity.ApplicationC1",
-    value="aaaa",
-    max_age=60,
-    secure=True,
-    httponly=True,
-    path='/',
-    domain='.pggmenco.nl'
-    #samesite=None
-    )
-
-    return resp
-
-@app.route("/cookie2")
-    def cookies2():
+    def cookies():
     resp = make_response("Set Cookies")
     cookies = request.cookies
     print(cookies)
