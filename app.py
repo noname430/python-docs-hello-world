@@ -44,7 +44,7 @@ def collect_cookies():
     print(cookies)
 
     resp.set_cookie(
-    "_ga",
+    "test_cookie",
     value="bbbb",
     max_age=120,
     secure=True,
