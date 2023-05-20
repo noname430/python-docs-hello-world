@@ -43,7 +43,7 @@ def cookies():
     cookies = request.cookies
     print(cookies)
 
-    resp.set_cookies(
+    resp.set_cookie(
     "foobar",
     value="bbbb",
     max_age=60,
