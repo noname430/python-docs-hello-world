@@ -44,23 +44,12 @@ def cookies():
     print(cookies)
 
     resp.set_cookie(
-    "test_cookie",
+    "foobar",
     value="bbbb",
-    max_age=120,
+    max_age=60,
     secure=True,
     httponly=True,
     path='/',
     domain='.pggmenco.nl'
-    #samesite=None
     )
 	
-#    resp.set_cookie(
-#    "_gid",
-#    value="cccc",
-#    max_age=120,
-#    secure=True,
-#    httponly=True,
-#    path='/',
-#    domain='.pggmenco.nl'
-#    #samesite=None
-#    )
