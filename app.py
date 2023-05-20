@@ -47,10 +47,10 @@ def cookies():
     ".AspNetCore.Identity.ApplicationC1",
     value="aaaa",
     max_age=60
-    path='/',
-    domain=.pggmenco.nl,
     secure=True,
     httponly=True
+    #path='/',
+    #domain=.pggmenco.nl,
     #samesite=None
     )
 
