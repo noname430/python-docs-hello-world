@@ -49,8 +49,8 @@ def cookies():
     max_age=60,
     secure=True,
     httponly=True,
-    path='/'
-    #domain=.pggmenco.nl,
+    path='/',
+    domain=.pggmenco.nl
     #samesite=None
     )
 
