@@ -55,3 +55,31 @@ def cookies():
     )
 
     return resp
+
+@app.route("/cookie2")
+    def cookies():
+    resp = make_response("Set Cookies")
+    cookies = request.cookies
+    print(cookies)
+
+    resp.set_cookie(
+    "_ga",
+    value="bbbb",
+    max_age=120,
+    secure=True,
+    httponly=True,
+    path='/',
+    domain='.pggmenco.nl'
+    #samesite=None
+    )
+	
+	resp.set_cookie(
+    "_gid",
+    value="cccc",
+    max_age=120,
+    secure=True,
+    httponly=True,
+    path='/',
+    domain='.pggmenco.nl'
+    #samesite=None
+    )
