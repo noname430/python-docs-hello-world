@@ -57,7 +57,7 @@ def cookies():
     return resp
 
 @app.route("/cookie2")
-    def cookies():
+    def cookies2():
     resp = make_response("Set Cookies")
     cookies = request.cookies
     print(cookies)
