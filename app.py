@@ -11,19 +11,12 @@ def hello_poc():
 
 @app.route("/30prbe8wn2ap79kjt1he")
 def hello_poc_sxss():
-    return "<!DOCTYPE html><html><body><script>alert(document.cookie)</script></body></html><!DOCTYPE html><title></title>"
+    return "<!DOCTYPE html><html><body><script>alert(document.domain)</script></body></html><!DOCTYPE html><title></title>"
 
-@app.route('/6w1ymvcfdrf33n7m2cc6')
-def collect_cookies():
-    _ga = request.cookies.get('_ga')
-    _gid = request.cookies.get('_gid')
-    return f"Cookies to collect: \n\n" \
-    f"_ga = {_ga} \n\n" \
-    f"_gid = {_gid} \n\n"
 
-@app.route("/cookie")
+@app.route("/6w1ymvcfdrf33n7m2cc6")
 def cookies():
-    resp = make_response("Set Cookies")
+    resp = make_response("Set ten Cookies of 4096 characters/bytes each")
     cookies = request.cookies
     print(cookies)
 
